@@ -1,0 +1,10 @@
+# MindIE-SD Domain Boundaries (`domain: "mindie-sd"`)
+
+This repository (`knowledge-mindie-sd`) contains MindIE-SD diffusion/DiT acceleration, sparse attention (`RainFusion`, `Ada-BSA`, `EagleQBSA`), `CacheAgent` (`DiTCache`, `AttentionCache`, `CustomCache`), `Ulysses`/`Ring`/`CFG` sequence parallelism, dynamic/timestep quantization (`W8A8`, `MXFP8`, `MXFP4`), 3D causal VAE sliced decode, and S0-S6 model optimization recipes under the canonical domain name `mindie-sd`. Keep stable unit IDs independent of path moves. Parse every unit as `mindie-graded-unit/1`, preserve its `evidence_strength` and declared `conditions`, and rebuild `index/routing-manifest.json` and `index/shard-topology.json` through the graded indexer after any unit edit. Runtime code remains in `mindie-agent/knowledge`.
+
+## Operating Rules
+
+1. **Exact Repository & Revision Conditions**: Bind source-derived units to the exact `repository` and `revision` inspected (`conditions.repository` and `conditions.revision`) or `framework: mindie-sd` with target Ascend hardware. Queries with mismatched revisions must be rejected, and queries omitting `revision` on revision-bound units remain excluded from default results (inspectable only via `include_unknown=True`).
+2. **Evidence Honesty**: Keep operator dispatch, device byte contracts, sequence-parallel collectives, and HBM offload distinct. Do not upgrade `single_observation` source-reading SOPs to `reproduced_empirical` or `L4` without real execution/ablation receipts, and never adopt unreviewed raw model outputs without line-level source verification.
+3. **Domain Isolation**: Keep all `MindIE-SD` framework axioms, DiT compute SOPs, custom operator contracts, parallel configs, VAE decode policies, and model recipes self-contained in `mindie-sd`. Cross-domain `explain` and `feedback` URIs belonging to other domains must be rejected.
+4. **Publication Gate**: [`./publication-contract.json`](./publication-contract.json) (`mindie-publication-contract/2`) and maintenance entry points under `scripts/` define the validator pin and local checks; run `python3 scripts/build_routing_index.py --root . --check` after any unit or index edit.

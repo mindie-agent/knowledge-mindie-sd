@@ -1,0 +1,757 @@
+{
+  "closure": {
+    "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+    ],
+    "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+    ],
+    "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop": [
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+    ],
+    "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms": [],
+    "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": [],
+    "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+    ],
+    "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+    ],
+    "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow": [
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+    ],
+    "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop"
+    ],
+    "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+    ],
+    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+    ],
+    "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+    ],
+    "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow": [
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop"
+    ],
+    "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+    ],
+    "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop": [
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+    ],
+    "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms": [],
+    "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop",
+      "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop"
+    ],
+    "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+    ],
+    "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+    ],
+    "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
+    ]
+  },
+  "federation": {
+    "corpus": {
+      "automatic": false,
+      "bytes": 117171,
+      "estimated_tokens": 20852,
+      "kind": "federation",
+      "path": ".",
+      "unit_ids": [
+        "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop",
+        "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop",
+        "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow",
+        "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
+        "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
+        "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow",
+        "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop",
+        "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop",
+        "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop",
+        "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop",
+        "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop",
+        "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow",
+        "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop",
+        "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop",
+        "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow",
+        "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow"
+      ],
+      "units": 24
+    },
+    "domains": [
+      {
+        "automatic": false,
+        "bytes": 117171,
+        "estimated_tokens": 20852,
+        "exceeds": [],
+        "kind": "federation",
+        "path": "mindie-sd",
+        "recommended_action": "review_federation_boundary",
+        "unit_ids": [
+          "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop",
+          "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop",
+          "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow",
+          "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
+          "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+          "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+          "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+          "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
+          "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
+          "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow",
+          "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop",
+          "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop",
+          "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow",
+          "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop",
+          "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop",
+          "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop",
+          "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow",
+          "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop",
+          "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop",
+          "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+          "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow",
+          "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop",
+          "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow",
+          "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow"
+        ],
+        "units": 24
+      }
+    ]
+  },
+  "index_build_elapsed_ms": 8.482291013933718,
+  "leaves": [
+    {
+      "automatic": false,
+      "bytes": 14601,
+      "estimated_tokens": 2565,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/concepts/architecture",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "units": 3
+    },
+    {
+      "automatic": false,
+      "bytes": 20339,
+      "estimated_tokens": 3605,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/dit-compute/sparse-and-cache",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop",
+        "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
+        "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
+      ],
+      "units": 4
+    },
+    {
+      "automatic": false,
+      "bytes": 13755,
+      "estimated_tokens": 2385,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/models/recipes",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
+        "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop",
+        "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow"
+      ],
+      "units": 3
+    },
+    {
+      "automatic": false,
+      "bytes": 4822,
+      "estimated_tokens": 815,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/operators/custom-ops",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 6202,
+      "estimated_tokens": 1181,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/operators/fusion-analysis",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow"
+      ],
+      "units": 1
+    },
+    {
+      "automatic": false,
+      "bytes": 13200,
+      "estimated_tokens": 2345,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/parallel/usp-and-cfg",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
+        "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow",
+        "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop"
+      ],
+      "units": 3
+    },
+    {
+      "automatic": false,
+      "bytes": 18390,
+      "estimated_tokens": 3204,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/quantization/contracts",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop",
+        "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop",
+        "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop",
+        "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow"
+      ],
+      "units": 4
+    },
+    {
+      "automatic": false,
+      "bytes": 19789,
+      "estimated_tokens": 3620,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/vae-and-offload/sliced-decode",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop",
+        "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop",
+        "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "units": 4
+    },
+    {
+      "automatic": false,
+      "bytes": 6073,
+      "estimated_tokens": 1132,
+      "exceeds": [],
+      "kind": "leaf",
+      "path": "mindie-sd/workflows/s0-s6-auto-opt",
+      "recommended_action": "review_leaf_split",
+      "unit_ids": [
+        "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow"
+      ],
+      "units": 1
+    }
+  ],
+  "schema": "mindie-shard-topology/1",
+  "two_level_subtrees": [
+    {
+      "automatic": false,
+      "bytes": 14601,
+      "estimated_tokens": 2565,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/concepts",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "units": 3
+    },
+    {
+      "automatic": false,
+      "bytes": 20339,
+      "estimated_tokens": 3605,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/dit-compute",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop",
+        "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
+        "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
+      ],
+      "units": 4
+    },
+    {
+      "automatic": false,
+      "bytes": 13755,
+      "estimated_tokens": 2385,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/models",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
+        "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop",
+        "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow"
+      ],
+      "units": 3
+    },
+    {
+      "automatic": false,
+      "bytes": 11024,
+      "estimated_tokens": 1996,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/operators",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+        "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow"
+      ],
+      "units": 2
+    },
+    {
+      "automatic": false,
+      "bytes": 13200,
+      "estimated_tokens": 2345,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/parallel",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
+        "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow",
+        "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop"
+      ],
+      "units": 3
+    },
+    {
+      "automatic": false,
+      "bytes": 18390,
+      "estimated_tokens": 3204,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/quantization",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop",
+        "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop",
+        "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop",
+        "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow"
+      ],
+      "units": 4
+    },
+    {
+      "automatic": false,
+      "bytes": 19789,
+      "estimated_tokens": 3620,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/vae-and-offload",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop",
+        "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop",
+        "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "units": 4
+    },
+    {
+      "automatic": false,
+      "bytes": 6073,
+      "estimated_tokens": 1132,
+      "exceeds": [],
+      "kind": "subtree",
+      "path": "mindie-sd/workflows",
+      "recommended_action": "review_two_level_subtree_split",
+      "unit_ids": [
+        "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow"
+      ],
+      "units": 1
+    }
+  ],
+  "unit_count": 24,
+  "units": {
+    "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": {
+      "bytes": 4473,
+      "category": "sop",
+      "content_sha256": "a4d874d90a123f9f483860ab3fb59c0c851610ba2c0e1f8d579a9da7a940c4a9",
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "estimated_tokens": 822,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop": {
+      "bytes": 4686,
+      "category": "sop",
+      "content_sha256": "c66da891270f88c176671270d87b2b8df30109e0c2f8f8a30265e89e10419d08",
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "estimated_tokens": 802,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow": {
+      "bytes": 4994,
+      "category": "workflow",
+      "content_sha256": "7c3583592e44a079225c939a0465d05cf652d877ce2fc6c61e51d30d02d80c7c",
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "estimated_tokens": 880,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow.md",
+      "tier": "L3"
+    },
+    "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop": {
+      "bytes": 4421,
+      "category": "sop",
+      "content_sha256": "4356c92e264faa4e55b188d49264f2538774ecdbf66a0c1140b8f22fe17680e4",
+      "domain_path": "mindie-sd/parallel/usp-and-cfg",
+      "estimated_tokens": 786,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms": {
+      "bytes": 4608,
+      "category": "axiom",
+      "content_sha256": "2e18fde2f847233470b05c9a7bc27da32ccfb20db426c4f4ffe5d79ffbb35321",
+      "domain_path": "mindie-sd/concepts/architecture",
+      "estimated_tokens": 759,
+      "evidence_strength": "software_contract",
+      "inherits_from": [],
+      "path": "mindie-sd/concepts/architecture/unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms.md",
+      "tier": "L1"
+    },
+    "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop": {
+      "bytes": 4822,
+      "category": "sop",
+      "content_sha256": "4dca3cd0c61fd2558a7956c560782ef6c9308a6cbf0b8ebc48d5919d145f219d",
+      "domain_path": "mindie-sd/operators/custom-ops",
+      "estimated_tokens": 815,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": {
+      "bytes": 5188,
+      "category": "axiom",
+      "content_sha256": "8f3342e228f9f2146c0b5b6506967e0a93b2870958b1654ae81958e6a37ba0e5",
+      "domain_path": "mindie-sd/concepts/architecture",
+      "estimated_tokens": 941,
+      "evidence_strength": "software_contract",
+      "inherits_from": [],
+      "path": "mindie-sd/concepts/architecture/unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms.md",
+      "tier": "L1"
+    },
+    "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": {
+      "bytes": 5683,
+      "category": "sop",
+      "content_sha256": "e254242eebde4bd1504027153041631d219c86f92ca5251ecbc3420f695af50b",
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "estimated_tokens": 1039,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop": {
+      "bytes": 4761,
+      "category": "sop",
+      "content_sha256": "9266a1d860469ab9dc2ff79c9674b7a4b6f6d2383a30c2f5dc40e6d2ae814a29",
+      "domain_path": "mindie-sd/models/recipes",
+      "estimated_tokens": 836,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/models/recipes/unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow": {
+      "bytes": 6202,
+      "category": "workflow",
+      "content_sha256": "b6cf980ac8d90de4d46596c7b1b8ee42fa6482101cecbf11244d2f7d46bf90bb",
+      "domain_path": "mindie-sd/operators/fusion-analysis",
+      "estimated_tokens": 1181,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+      ],
+      "path": "mindie-sd/operators/fusion-analysis/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow.md",
+      "tier": "L3"
+    },
+    "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop": {
+      "bytes": 4368,
+      "category": "sop",
+      "content_sha256": "a928eb8708ae7df0a4cb2d6ec373c1ab41f4bd1a7d12228a097ed6c4ac117cc3",
+      "domain_path": "mindie-sd/models/recipes",
+      "estimated_tokens": 732,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/models/recipes/unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop": {
+      "bytes": 4833,
+      "category": "sop",
+      "content_sha256": "c5ced3afd2ff679b1f0aca71f9c23c478ae95696a28deee70acc1958d176f936",
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "estimated_tokens": 870,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": {
+      "bytes": 6073,
+      "category": "workflow",
+      "content_sha256": "a7679961e05d5097e009a9eefce018efee81d47c0f625440783f3e5d41540af9",
+      "domain_path": "mindie-sd/workflows/s0-s6-auto-opt",
+      "estimated_tokens": 1132,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/workflows/s0-s6-auto-opt/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md",
+      "tier": "L3"
+    },
+    "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop": {
+      "bytes": 5356,
+      "category": "sop",
+      "content_sha256": "9977afb954e46d43a4fd8f9667c5e09037592ebe83f200f88719e4d1ba8449d6",
+      "domain_path": "mindie-sd/quantization/contracts",
+      "estimated_tokens": 960,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop": {
+      "bytes": 4248,
+      "category": "sop",
+      "content_sha256": "cf56dac91c2828bef99e6440880d2f4b3ca26373c13c776fe77a81a4813ece82",
+      "domain_path": "mindie-sd/quantization/contracts",
+      "estimated_tokens": 733,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop": {
+      "bytes": 4976,
+      "category": "sop",
+      "content_sha256": "2eeb9853b8d0a31b4225c5ad9391bf84d05f927aced8028eea6cc812e78dbcc7",
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "estimated_tokens": 884,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow": {
+      "bytes": 4238,
+      "category": "workflow",
+      "content_sha256": "2f5a971234bcd17612eba9aa21d838c844680f92f039b2cf2dbe4d5fce80e893",
+      "domain_path": "mindie-sd/parallel/usp-and-cfg",
+      "estimated_tokens": 735,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow.md",
+      "tier": "L3"
+    },
+    "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop": {
+      "bytes": 3995,
+      "category": "sop",
+      "content_sha256": "549243a35fc69f4482d5c6d8b7f9d68c5cfb8d188d69252de890727f4debd5d0",
+      "domain_path": "mindie-sd/quantization/contracts",
+      "estimated_tokens": 674,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop": {
+      "bytes": 4541,
+      "category": "sop",
+      "content_sha256": "564f499c607adb1a40cfd5db82dd7f9089183584ec382ec676a1f8e0a53df7f3",
+      "domain_path": "mindie-sd/parallel/usp-and-cfg",
+      "estimated_tokens": 824,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms": {
+      "bytes": 4805,
+      "category": "axiom",
+      "content_sha256": "9f0ac06cb849d888c7d5cf947bc5b81c875ffb95e265b0616b12c805a80cfe67",
+      "domain_path": "mindie-sd/concepts/architecture",
+      "estimated_tokens": 865,
+      "evidence_strength": "software_contract",
+      "inherits_from": [],
+      "path": "mindie-sd/concepts/architecture/unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms.md",
+      "tier": "L1"
+    },
+    "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow": {
+      "bytes": 4359,
+      "category": "workflow",
+      "content_sha256": "96b99b299ce1aaf9ab95e06e2faaab21f8888d261539cfdddb6d650fb47daa82",
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "estimated_tokens": 783,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow.md",
+      "tier": "L3"
+    },
+    "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop": {
+      "bytes": 6124,
+      "category": "sop",
+      "content_sha256": "bd07cc6aea93c18bff6f747373d47b5b829b97a4a68f802d29190eb9b8db0eed",
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "estimated_tokens": 1145,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow": {
+      "bytes": 4791,
+      "category": "workflow",
+      "content_sha256": "772bda56aee3db9c5e7e01191e58c69263edd64c6360f46f33b66293706fc1f6",
+      "domain_path": "mindie-sd/quantization/contracts",
+      "estimated_tokens": 837,
+      "evidence_strength": "software_contract",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow.md",
+      "tier": "L3"
+    },
+    "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow": {
+      "bytes": 4626,
+      "category": "workflow",
+      "content_sha256": "6199c4367bf3549709faa17b9e012b24c6231e0c534787ef46c0e668b5082419",
+      "domain_path": "mindie-sd/models/recipes",
+      "estimated_tokens": 817,
+      "evidence_strength": "reproduced_empirical",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/models/recipes/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow.md",
+      "tier": "L3"
+    }
+  }
+}

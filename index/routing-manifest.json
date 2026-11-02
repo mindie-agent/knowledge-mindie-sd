@@ -1,0 +1,1398 @@
+{
+  "build_elapsed_ms": 8.482291013933718,
+  "closure": {
+    "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+    ],
+    "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+    ],
+    "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop": [
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+    ],
+    "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms": [],
+    "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": [],
+    "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+    ],
+    "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+    ],
+    "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow": [
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+    ],
+    "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop"
+    ],
+    "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+    ],
+    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+    ],
+    "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+    ],
+    "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+    ],
+    "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow": [
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop"
+    ],
+    "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+    ],
+    "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop": [
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+    ],
+    "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms": [],
+    "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop",
+      "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop"
+    ],
+    "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+    ],
+    "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+    ],
+    "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow": [
+      "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
+    ]
+  },
+  "generation": "5218bad07c6366ceac40638f1fbf61324778ca5ae590c77d88fd8b3218c9b258",
+  "id_path": {
+    "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop.md",
+    "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop.md",
+    "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow.md",
+    "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop.md",
+    "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms": "mindie-sd/concepts/architecture/unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms.md",
+    "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop": "mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md",
+    "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": "mindie-sd/concepts/architecture/unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms.md",
+    "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop.md",
+    "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop": "mindie-sd/models/recipes/unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop.md",
+    "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow": "mindie-sd/operators/fusion-analysis/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow.md",
+    "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop": "mindie-sd/models/recipes/unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop.md",
+    "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop.md",
+    "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow": "mindie-sd/workflows/s0-s6-auto-opt/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md",
+    "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop": "mindie-sd/quantization/contracts/unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop.md",
+    "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop": "mindie-sd/quantization/contracts/unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop.md",
+    "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop.md",
+    "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow.md",
+    "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop": "mindie-sd/quantization/contracts/unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop.md",
+    "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop.md",
+    "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms": "mindie-sd/concepts/architecture/unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms.md",
+    "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow.md",
+    "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop.md",
+    "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow": "mindie-sd/quantization/contracts/unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow.md",
+    "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow": "mindie-sd/models/recipes/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow.md"
+  },
+  "query_budget_excludes_build": true,
+  "schema_version": "mindie-routing-manifest/1",
+  "token_estimator": "utf8_bytes_div_4_ceiling",
+  "unit_count": 24,
+  "units": [
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/vae-opt/SKILL.md"
+        ],
+        "source_digest": "351aff4228d45196180fe9a7fd227070f7cff06c7df846332af3d0cc8c43dcf6",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/vae-opt/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD 3D 因果 VAE（WanVAE / HunyuanVAE / TAEHV）跨轴耦合审计与潜帧边界切分规程",
+      "token_estimate": 822,
+      "triggers": {
+        "error_signatures": [
+          "chunk_latents=5 / trim=3",
+          "帧轴切分不可能精确"
+        ],
+        "keywords": [
+          "vae-opt",
+          "taehv",
+          "tae-2d",
+          "MemBlock",
+          "apply_sliced",
+          "TGrow",
+          "time_upscale"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/sparse_flash_attn_ada_bsa.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/sparse_flash_attn_rf_v3.py"
+        ],
+        "source_digest": "d58788e3ae696722f3ec5e9448046811d85dcc7442342cf2f6f701b5467d8765",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/sparse_flash_attn_ada_bsa.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD AdaBSA 自适应 CDF 块稀疏与 EagleQBSA/FP8 旋转量化块稀疏规程",
+      "token_estimate": 802,
+      "triggers": {
+        "error_signatures": [
+          "ada_block_sparse_attention / get_estimate_mask (ada_bsa) are not supported on A5 devices",
+          "eagle qbsa per-block quant only supports 4D qkv"
+        ],
+        "keywords": [
+          "ada_block_sparse_attention",
+          "sparse_block_estimate",
+          "get_estimate_mask",
+          "_eagle_qbsa_quant_qkv",
+          "_fp8_quant_qkv",
+          "cdf_threshold"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-cache-agent-ditcache-attentioncache-calibration-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/cache_agent/cache_agent.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/cache_agent/dit_block_cache.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/cache_agent/attention_cache.py"
+        ],
+        "source_digest": "bb5cdca8508cd7e80f2f52f46d95fa6f1ad64683c11c8e2a1d656d8d2e711ccd",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/cache_agent/cache_agent.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD CacheAgent DiTBlockCache 与 AttentionCache 跨步复用标定工作流",
+      "token_estimate": 880,
+      "triggers": {
+        "error_signatures": [
+          "The 'block_end' must <= 'blocks_count'",
+          "The 'step_end' must >= 'step_start'",
+          "Method .* is not supported"
+        ],
+        "keywords": [
+          "CacheAgent",
+          "CacheConfig",
+          "DiTBlockCache",
+          "AttentionCache",
+          "dit_block_cache",
+          "attention_cache",
+          "step_interval"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/parallel/usp-and-cfg",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
+      "inherits_from": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/dit-parallel-opt/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/parallelism.md"
+        ],
+        "source_digest": "a48ef062ddc8a6354655aafe27336e4ee7ccf2e45cc7e0c494e4f6e9fb73256c",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/dit-parallel-opt/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD CFG 并行通信组正交划分、AllGather-KV×Ulysses 复合选型与通信流掩盖规程",
+      "token_estimate": 786,
+      "triggers": {
+        "error_signatures": [
+          "profile 只有 allGather 无 allToAll",
+          "Communication(Not Overlapped)"
+        ],
+        "keywords": [
+          "cfg_parallel",
+          "AllGather-KV",
+          "context_parallel_config",
+          "comm-stream masking",
+          "all_to_all_single",
+          "npu-smi info -t topo"
+        ]
+      }
+    },
+    {
+      "category": "axiom",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/concepts/architecture",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "mindie-sd/concepts/architecture/unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/_custom_ops.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/compilation/mindie_sd_backend.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/compilation.md"
+        ],
+        "source_digest": "58988ad797b6ca5c85203e488918f0c5b45b91547b57ad7dc88669b9e4809714",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/_custom_ops.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "MindIE-SD custom C++/AscendC/Triton/Catlass operator registration, fake-tensor meta ops, and MindieSDBackend compilation axioms",
+      "token_estimate": 759,
+      "triggers": {
+        "error_signatures": [
+          "inferShape function does not exist",
+          "sparse_flash_attn_rf_v2 (rain_fusion_attention) is not supported on A5 devices",
+          "ada_block_sparse_attention / get_estimate_mask (ada_bsa) are not supported on A5 devices",
+          "eagle_ffn_linear: weight1 shape"
+        ],
+        "keywords": [
+          "torch.ops.mindiesd",
+          "register_mindie_fake_op",
+          "MindieSDBackend",
+          "ACLGraphBackend",
+          "eagle_ffn_linear",
+          "quant_four_over_six_a5",
+          "rainfusionattention",
+          "block_sparse_attention"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/operators/custom-ops",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "path": "mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/operator-dev/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/sparse.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/quantization.md"
+        ],
+        "source_digest": "747d1489067e7d888c9c344a8535d6518e846d82a2bbbcd5264585158e1de186",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/operator-dev/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 2,
+      "tier": "L2",
+      "title": "MindIE-SD custom C++/AscendC/TIK/Triton/Catlass operators (RainFusion, EagleQBSA, LaPreprocess, mm_swiglu_mxquant) SOP",
+      "token_estimate": 815,
+      "triggers": {
+        "error_signatures": [
+          "inferShape function does not exist",
+          "AI Core 507015",
+          "aclnnBlockSparseAttention"
+        ],
+        "keywords": [
+          "RainFusionAttention",
+          "AdaBlockSparseAttention",
+          "EagleQuantBlockSparseAttention",
+          "EagleQBSA",
+          "EagleFfn",
+          "mm_swiglu_mxquant",
+          "LaPreprocess",
+          "ascend_laser_attention",
+          "NormRopeConcat",
+          "quant_four_over_six_a5"
+        ]
+      }
+    },
+    {
+      "category": "axiom",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/concepts/architecture",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "mindie-sd/concepts/architecture/unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/architecture.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/sparse.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/quantization.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/cache.md"
+        ],
+        "source_digest": "6d9df1e389bee0b17a8cb483685e3e920c0290bffd777733c999c0a38c8a1599",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/architecture.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "MindIE-SD DiT/Diffusion acceleration architecture, sparse attention, CacheAgent, and quantization axioms",
+      "token_estimate": 941,
+      "triggers": {
+        "error_signatures": [
+          "aclnnBlockSparseAttention",
+          "inferShape function does not exist",
+          "W4A4_MXFP4_FOUROVERSIX_DYNAMIC"
+        ],
+        "keywords": [
+          "MindIE-SD",
+          "mindiesd",
+          "RainFusion",
+          "rf_v2",
+          "rf_v3",
+          "ada_bsa",
+          "EagleQBSA",
+          "CacheAgent",
+          "MindieSDBackend",
+          "attention_forward",
+          "sparse_attention"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/dit-perf-opt/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/sparse.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/quantization.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/cache.md"
+        ],
+        "source_digest": "76dd44bd584d0e0b20c537f7df547ed5f3d8bc17c5ee5a7919e9726f3497a2e6",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/dit-perf-opt/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD DiT compute bottleneck optimization, sparse/quant/cache tier selection, and combination search SOP",
+      "token_estimate": 1039,
+      "triggers": {
+        "error_signatures": [
+          "staying dense",
+          "Can't find Parallelism/Quantization Config for",
+          "|Δwall| >= 2 * |Δdev|"
+        ],
+        "keywords": [
+          "dit-perf-opt",
+          "rf_v2",
+          "rf_v3",
+          "ada_bsa",
+          "EagleQBSA",
+          "DiTCache",
+          "AttentionCache",
+          "W8A8_MXFP8",
+          "W8A8_DYNAMIC",
+          "combination-search",
+          "lora-adapter-cost"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/models/recipes",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop"
+      ],
+      "path": "mindie-sd/models/recipes/unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/cache-dit/FLUX.1-dev.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/qwen-image-2.1/infer.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/dummy_run/model/flux_model.py"
+        ],
+        "source_digest": "9907e9100e7db451c1a9059dcf1e7957350dfcf2db4352c5665a6717eea19352",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/cache-dit/FLUX.1-dev.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD Flux.1 / Qwen-Image / SD3 MMDiT 双流图像扩散模型联合调优规程",
+      "token_estimate": 836,
+      "triggers": {
+        "error_signatures": [
+          "JointTransformerBlock",
+          "SingleTransformerBlock"
+        ],
+        "keywords": [
+          "FLUX.1-dev",
+          "Qwen-Image",
+          "MMDiT",
+          "AdaLayerNormZero",
+          "cache-dit",
+          "DiTBlockCache"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/operators/fusion-analysis",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+      ],
+      "path": "mindie-sd/operators/fusion-analysis/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/fusion-scope-analyze/SKILL.md"
+        ],
+        "source_digest": "0150cf3251d8afcc7ee720dee1e9d5939d17d2dc343b08c9d13129ce0b3e33fa",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/fusion-scope-analyze/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 2,
+      "tier": "L3",
+      "title": "MindIE-SD fusion-scope-analyze structural boundary rules, PipeUtilization benefit ceiling, and post-hoc equal-work audit workflow",
+      "token_estimate": 1181,
+      "triggers": {
+        "error_signatures": [
+          "fused kernel wall clock is flat or slower than unfused baseline",
+          "PipeUtilization columns missing or N/A in op_summary",
+          "sum of independent candidate fusion speedups exceeds actual combined speedup"
+        ],
+        "keywords": [
+          "fusion-scope-analyze",
+          "check_fusion_scope",
+          "memory_bound",
+          "PipeUtilization",
+          "mte2_ratio",
+          "mac_ratio",
+          "vec_ratio",
+          "cube_utilization",
+          "equal-work-busy-cycle"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/models/recipes",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop"
+      ],
+      "path": "mindie-sd/models/recipes/unit-mindie-sd-hunyuanvideo-cogvideox-and-minimax-h3-optimization-recipe-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/minimax-h3/infer.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/DyEPLB.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/dummy_run/model/hunyuan_image3_model.py"
+        ],
+        "source_digest": "b83863ed3af84feea282f54ffc4f9bbf4254140618b7a976212b73b84ada2bca",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/minimax-h3/infer.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD HunyuanVideo / HunyuanImage-3.0 / MiniMax-H3 MoE 与多模态扩散调优规程",
+      "token_estimate": 732,
+      "triggers": {
+        "error_signatures": [
+          "EP All-to-All",
+          "Exposed Communication"
+        ],
+        "keywords": [
+          "HunyuanVideo",
+          "HunyuanImage-3.0",
+          "MiniMax-H3",
+          "DyEPLB",
+          "AllGather-KV",
+          "distributed-layerwise-offload"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/offload.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/share_memory.py"
+        ],
+        "source_digest": "50a668defb5d93c3d06659cec679c27c283c83f7e80349edff953b5585758ba1",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/offload.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD DiT 双流异步参数 Offload（storage.resize_）与单机多实例 IPC 共享内存规程",
+      "token_estimate": 870,
+      "triggers": {
+        "error_signatures": [
+          "Master timeout waiting for child processes ready",
+          "timeout waiting for share handle",
+          "Offload parameter validation failed"
+        ],
+        "keywords": [
+          "enable_offload",
+          "min_reserved_blocks_count",
+          "ShareMemoryManager",
+          "init_share_memory",
+          "untyped_storage",
+          "safe_loads"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "repository": "Ascend/MindIE-SD",
+        "revision": "9fe772dfb90696e21b5e5d4e92ca07dffab84cf4"
+      },
+      "domain_path": "mindie-sd/workflows/s0-s6-auto-opt",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/workflows/s0-s6-auto-opt/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/model-auto-optimization/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/README.md"
+        ],
+        "source_digest": "6a6619b9bd6692cddcd65cce94ca48bd254fbc53eb82ff5f6e938dfdcea17813",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/model-auto-optimization/SKILL.md",
+        "source_type": "ecosystem_repo",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD model-auto-optimization S0-S6 stage-gated orchestration, multi-agent fan-out, dual-report lint, and kb_lint workflow",
+      "token_estimate": 1132,
+      "triggers": {
+        "error_signatures": [
+          "stage_gate.py --stage close fails due to missing overview_report.md or detail_report.md",
+          "report_lint.py rejects un-anchored estimates on baseline/recommended/triad rows",
+          "kb_lint.py rejects duplicated thresholds or un-scoped raw wall-clock numbers in skill prose"
+        ],
+        "keywords": [
+          "model-auto-optimization",
+          "stage_gate",
+          "report_lint",
+          "audit_report",
+          "kb_lint",
+          "post-enable-review",
+          "seam_check",
+          "run-state"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/quantization/contracts",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/quantization-dev/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/quantization.md"
+        ],
+        "source_digest": "907b981d252520f4e9d3e4b64e4ead918b9f2aff5efa2eeaa16093e358b24ba9",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/quantization-dev/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD quantization device byte contract reverse-engineering and Triton-Ascend bit-exact alignment SOP",
+      "token_estimate": 960,
+      "triggers": {
+        "error_signatures": [
+          "fused quantizer payload differs from aclnn reference on ~58% or ~0.1% of bytes",
+          "triton-ascend x.to(tl.bfloat16).to(tl.float32) silently eliminated as no-op",
+          "8-bit conversion wrap-around garbage when clamping is removed"
+        ],
+        "keywords": [
+          "quantization-dev",
+          "MXFP8",
+          "e8m0",
+          "e4m3",
+          "RNE",
+          "ieee_rounding",
+          "bitcast",
+          "wrap-around",
+          "quant_four_over_six_a5"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/quantization/contracts",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-quantize-model-descriptor-and-quantlinear-replacement-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/quantize.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/mode.py"
+        ],
+        "source_digest": "14810594e51c5caae3c278cce17b5218d67f26a605161c5aada4ffb59006efb8",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/quantize.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD quantize() 模型描述符解析、Safetensors 权重挂载与 QuantLinear 原地替换规程",
+      "token_estimate": 733,
+      "triggers": {
+        "error_signatures": [
+          "MAX_WEIGHT_SIZE",
+          "parse_quant_description"
+        ],
+        "keywords": [
+          "quantize",
+          "OnlineQuantConfig",
+          "WeightQuantLinear",
+          "smooth_quantize_w8a8",
+          "replace_rank_suffix",
+          "build_online_fa_rot_weights"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/dit-compute/sparse-and-cache",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
+      ],
+      "path": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/sparse_flash_attn_rf_v2.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/sparse_flash_attn_rf_v3.py"
+        ],
+        "source_digest": "f01ab7d03120ebfc9b453165df4672d840bd7fc9e51824e622ea0fe97684c811",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/sparse_flash_attn_rf_v2.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD RainFusion V2/V3 3D 时空窗重排、分块池化掩码与首帧保护规程",
+      "token_estimate": 884,
+      "triggers": {
+        "error_signatures": [
+          "sparse_flash_attn_rf_v2 (rain_fusion_attention) is not supported on A5 devices",
+          "ParametersInvalid"
+        ],
+        "keywords": [
+          "rain_fusion_attention",
+          "bsa_sparse_attention_v3",
+          "rf_v2",
+          "rf_v3",
+          "get_blockwise_mask",
+          "rearrange_with_remaining",
+          "protect_first_frame"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/parallel/usp-and-cfg",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop"
+      ],
+      "path": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-sequence-padding-alignment-and-multi-card-scaling-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/dit-parallel-opt/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/usp.py"
+        ],
+        "source_digest": "a48ef062ddc8a6354655aafe27336e4ee7ccf2e45cc7e0c494e4f6e9fb73256c",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/dit-parallel-opt/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD 序列并行填充对齐、AlltoAllV 缺陷绕过与并行×稀疏叠加工作流",
+      "token_estimate": 735,
+      "triggers": {
+        "error_signatures": [
+          "HcclAlltoAllV SIGSEGV",
+          "EE1003 coreDim",
+          "hcom_alltoallv"
+        ],
+        "keywords": [
+          "S_PAD",
+          "HcclAlltoAllV",
+          "hcom_alltoall",
+          "Gather-then-Sparse",
+          "actual_seq_lengths",
+          "step_trace"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/quantization/contracts",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-timestep-aware-dynamic-quantization-calibration-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/config.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/utils.py"
+        ],
+        "source_digest": "b17edb4a43c959fe07d42e6288546f1c6a7100e978f08c14954e232afcf4d3eb",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/config.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD W8A8_TIMESTEP 时间步感知量化与 TimestepManager 动态切换规程",
+      "token_estimate": 674,
+      "triggers": {
+        "error_signatures": [
+          "TimestepManager.set_timestep_idx",
+          "t_idx >= max_timestep"
+        ],
+        "keywords": [
+          "W8A8_TIMESTEP",
+          "W8A8TimeStepQuantLinear",
+          "TimestepManager",
+          "TimestepPolicyConfig",
+          "set_timestep_idx",
+          "get_timestep_idx"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/parallel/usp-and-cfg",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop",
+      "inherits_from": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms"
+      ],
+      "path": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-usp-ulysses-alltoall-and-ring-p2p-attention-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/usp.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/usp.md"
+        ],
+        "source_digest": "b2a9986c49333a8c479fdcdb45613fc3a9d80f398142c91d573ad1e9e408748a",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/usp.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD USP Ulysses All-to-All 与 Ring P2P 混合序列并行注意力规程",
+      "token_estimate": 824,
+      "triggers": {
+        "error_signatures": [
+          "MIE-USP-001",
+          "MIE-USP-002",
+          "MIE-USP-003",
+          "MIE-USP-004",
+          "the number of q heads must be divisible by the number of kv heads"
+        ],
+        "keywords": [
+          "usp",
+          "ulysses_group",
+          "ring_group",
+          "comm_dtype",
+          "comm_quant_scope",
+          "USPShapeError",
+          "USPTopologyError"
+        ]
+      }
+    },
+    {
+      "category": "axiom",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/concepts/architecture",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "mindie-sd/concepts/architecture/unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/usp.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/usp.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/parallelism.md"
+        ],
+        "source_digest": "b2a9986c49333a8c479fdcdb45613fc3a9d80f398142c91d573ad1e9e408748a",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/usp.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L1",
+      "title": "MindIE-SD sequence parallelism (Ulysses AllToAll, Ring P2P attention, CFG parallel, and hybrid USP) axioms",
+      "token_estimate": 865,
+      "triggers": {
+        "error_signatures": [
+          "MIE-USP-001",
+          "MIE-USP-002",
+          "MIE-USP-003",
+          "q/kv heads must be divisible by Ulysses world size",
+          "FA output sequence"
+        ],
+        "keywords": [
+          "usp_attention",
+          "ulysses_group",
+          "kv_gather_group",
+          "USPTopologyError",
+          "USPShapeError",
+          "cfg_size",
+          "ulysses_size",
+          "ring_size",
+          "comm_quant_scope"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop",
+        "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/vae-opt/SKILL.md"
+        ],
+        "source_digest": "351aff4228d45196180fe9a7fd227070f7cff06c7df846332af3d0cc8c43dcf6",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/vae-opt/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD VAE/TAE 状态携带切分四道等价验证闸与集体通信防死锁工作流",
+      "token_estimate": 783,
+      "triggers": {
+        "error_signatures": [
+          "all_gather_into_tensor",
+          "repeat_interleave",
+          "rank < pieces"
+        ],
+        "keywords": [
+          "vae-opt",
+          "shard_pieces_from_env",
+          "all_gather_into_tensor",
+          "repeat_interleave",
+          "bitwise",
+          "apply_sliced"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/vae-and-offload/sliced-decode",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
+      ],
+      "path": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-tae-sliced-state-decode-and-offload-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/vae-opt/SKILL.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/cpu_offload.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/share_memory.md"
+        ],
+        "source_digest": "351aff4228d45196180fe9a7fd227070f7cff06c7df846332af3d0cc8c43dcf6",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:.agents/skills/vae-opt/SKILL.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD VAE/TAE independence proof, latent-boundary sliced state decode, and async CPU offload SOP",
+      "token_estimate": 1145,
+      "triggers": {
+        "error_signatures": [
+          "all_gather_into_tensor writes to stack copy leaving original list uninitialized",
+          "nn.Upsample large batch silently leaves tail frames un-updated with stale HBM",
+          "deadlock when collective participation depends on rank < pieces"
+        ],
+        "keywords": [
+          "vae-opt",
+          "sliced_state_decode",
+          "MemBlock",
+          "shard_equivalence_check",
+          "frame_health",
+          "enable_offload",
+          "share_memory",
+          "min_reserved_blocks_count"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/quantization/contracts",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-quantization-device-byte-contract-and-alignment-sop"
+      ],
+      "path": "mindie-sd/quantization/contracts/unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/layer.py",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:docs/zh/features/quantization.md"
+        ],
+        "source_digest": "315f3ac4215b401cbf248b8089f36aa411dba6497e3c67d88f3898bca401e0aa",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/quantization/layer.py",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD W8A8/MXFP8/W4A4/MXFP4 线性层与注意力分级量化及精度回退工作流",
+      "token_estimate": 837,
+      "triggers": {
+        "error_signatures": [
+          "W4A4 MXFP4 weight must be torch.float8_e4m3fn or torch.uint8",
+          "npu_dynamic_mx_quant must support axis, scale_alg and dst_type_max"
+        ],
+        "keywords": [
+          "W8A8MXFP8QuantLinear",
+          "W4A4MXFP4QuantLinear",
+          "W4A4MXFP4DualQuantLinear",
+          "W4A4MXFP4FourOverSixQuantLinear",
+          "FP8RotateQuantFA",
+          "MXFP4QuantFA",
+          "quant_four_over_six_a5"
+        ]
+      }
+    },
+    {
+      "category": "workflow",
+      "conditions": {
+        "framework": "mindie-sd",
+        "hardware": [
+          "Ascend 910B (Atlas A2)",
+          "Ascend 910C (Atlas A3)",
+          "Ascend 950PR/DT"
+        ]
+      },
+      "domain_path": "mindie-sd/models/recipes",
+      "evidence_strength": "reproduced_empirical",
+      "id": "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow",
+      "inherits_from": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
+      ],
+      "inherits_from_closure": [
+        "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
+        "unit-mindie-sd-usp-ulysses-ring-and-cfg-sequence-parallel-axioms",
+        "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
+        "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
+      ],
+      "path": "mindie-sd/models/recipes/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/wan/parameter_config.md",
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/dummy_run/model/wan_model.py"
+        ],
+        "source_digest": "fe8a90af8299476ec36ea7a1a8f9d518a389e3b9e2a810f4041e067ab72506b4",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:examples/wan/parameter_config.md",
+        "source_type": "architecture_and_runtime_guide",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L3",
+      "title": "MindIE-SD Wan2.1/Wan2.2 视频生成模型（稀疏注意力 × USP × 量化 × 3D VAE）联合调优工作流",
+      "token_estimate": 817,
+      "triggers": {
+        "error_signatures": [
+          "MIE-USP-003",
+          "12 % 8 != 0"
+        ],
+        "keywords": [
+          "Wan2.1",
+          "Wan2.2",
+          "WanAttentionBlock",
+          "rotary_position_embedding",
+          "rf_v2",
+          "rf_v3",
+          "dit_block_cache"
+        ]
+      }
+    }
+  ]
+}
