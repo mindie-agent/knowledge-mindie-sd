@@ -1,5 +1,5 @@
 {
-  "build_elapsed_ms": 8.482291013933718,
+  "build_elapsed_ms": 8.436916046775877,
   "closure": {
     "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": [
       "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
@@ -94,7 +94,7 @@
       "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
     ]
   },
-  "generation": "5218bad07c6366ceac40638f1fbf61324778ca5ae590c77d88fd8b3218c9b258",
+  "generation": "c1575b0160c80926906c11eebb59faa9784750d4d4f87ca3a7efd79f721537b4",
   "id_path": {
     "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop.md",
     "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop.md",
@@ -414,10 +414,10 @@
         "source_type": "architecture_and_runtime_guide",
         "supersedes": []
       },
-      "revision": 2,
+      "revision": 3,
       "tier": "L2",
       "title": "MindIE-SD custom C++/AscendC/TIK/Triton/Catlass operators (RainFusion, EagleQBSA, LaPreprocess, mm_swiglu_mxquant) SOP",
-      "token_estimate": 815,
+      "token_estimate": 1294,
       "triggers": {
         "error_signatures": [
           "inferShape function does not exist",

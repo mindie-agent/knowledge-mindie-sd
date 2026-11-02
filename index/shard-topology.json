@@ -96,8 +96,8 @@
   "federation": {
     "corpus": {
       "automatic": false,
-      "bytes": 117171,
-      "estimated_tokens": 20852,
+      "bytes": 119089,
+      "estimated_tokens": 21331,
       "kind": "federation",
       "path": ".",
       "unit_ids": [
@@ -131,8 +131,8 @@
     "domains": [
       {
         "automatic": false,
-        "bytes": 117171,
-        "estimated_tokens": 20852,
+        "bytes": 119089,
+        "estimated_tokens": 21331,
         "exceeds": [],
         "kind": "federation",
         "path": "mindie-sd",
@@ -167,7 +167,7 @@
       }
     ]
   },
-  "index_build_elapsed_ms": 8.482291013933718,
+  "index_build_elapsed_ms": 8.436916046775877,
   "leaves": [
     {
       "automatic": false,
@@ -217,8 +217,8 @@
     },
     {
       "automatic": false,
-      "bytes": 4822,
-      "estimated_tokens": 815,
+      "bytes": 6740,
+      "estimated_tokens": 1294,
       "exceeds": [],
       "kind": "leaf",
       "path": "mindie-sd/operators/custom-ops",
@@ -352,8 +352,8 @@
     },
     {
       "automatic": false,
-      "bytes": 11024,
-      "estimated_tokens": 1996,
+      "bytes": 12942,
+      "estimated_tokens": 2475,
       "exceeds": [],
       "kind": "subtree",
       "path": "mindie-sd/operators",
@@ -494,11 +494,11 @@
       "tier": "L1"
     },
     "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop": {
-      "bytes": 4822,
+      "bytes": 6740,
       "category": "sop",
-      "content_sha256": "4dca3cd0c61fd2558a7956c560782ef6c9308a6cbf0b8ebc48d5919d145f219d",
+      "content_sha256": "c8120c0763202840e66f22b403599a936a425c50cd341ccde32944a13e7ec7be",
       "domain_path": "mindie-sd/operators/custom-ops",
-      "estimated_tokens": 815,
+      "estimated_tokens": 1294,
       "evidence_strength": "software_contract",
       "inherits_from": [
         "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
