@@ -12,7 +12,7 @@
   <a href="https://github.com/mindie-agent/mindie-agent"><img src="https://img.shields.io/badge/MindIE%20Agent-Ecosystem-7045f5.svg" alt="MindIE Agent"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/Schema-mindie--graded--unit%2F1-0f766e.svg" alt="Schema mindie-graded-unit/1"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/domain-mindie--sd-0284c7.svg" alt="Domain mindie-sd"></a>
-  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-24%20Units-d97757.svg" alt="24 Graded Units"></a>
+  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-25%20Units-d97757.svg" alt="25 Graded Units"></a>
   <a href="./index/shard-topology.json"><img src="https://img.shields.io/badge/Levels-L1%20to%20L4-10a37f.svg" alt="Levels L1-L4"></a>
 </p>
 
@@ -77,11 +77,27 @@ Once installed, the native host plugin connects to the [`mindie-knowledge`](http
 
 </details>
 
+In a vLLM-Omni Consult step, look up MindIE-SD operator guidance by the confirmed library revision and call path. The example values below require matching deployment evidence. If the package is installed or FLASH_ATTN is configured and the path is still unknown, include_unknown=True can show which facts are missing. Full tuning and parallelism recipes retain their own conditions.
+
+```python
+observed = {
+    "framework": "vllm-omni",
+    "repository": "Ascend/MindIE-SD",
+    "revision": "9fe772dfb90696e21b5e5d4e92ca07dffab84cf4",
+    "attention_implementation": "mindiesd.attention_forward",
+}
+knowledge_query(domain="mindie-sd", query="dense attention_forward dispatch", conditions=observed)
+knowledge_explain(
+    ref="mindie://mindie-sd/units/unit-mindie-sd-dense-attention-dispatch-sop@1",
+    conditions=observed,
+)
+```
+
 ---
 
 ## 🏗️ Domain Overview & L1–L4 Graded Architecture
 
-This repository hosts the standalone **`mindie-sd` graded domain knowledge corpus** for MindIE Agent (**24 graded units**: `L1: 3`, `L2: 14`, `L3: 7`, `L4: 0`). Dedicated to the `MindIE-SD` multimodal diffusion acceleration framework across Ascend 800I A2 (910B), 800I A3 (910C), and Ascend 950 (A5), it systematically captures:
+This repository hosts the standalone **`mindie-sd` graded domain knowledge corpus** for MindIE Agent (**25 graded units**: `L1: 3`, `L2: 15`, `L3: 7`, `L4: 0`). Dedicated to the `MindIE-SD` multimodal diffusion acceleration framework across Ascend 800I A2 (910B), 800I A3 (910C), and Ascend 950 (A5), it systematically captures:
 
 - **Architectural Axioms (`mindie-sd/concepts/architecture`)**: Orthogonal DiT sparse-attention, step-caching, and quantization invariants; Unified Sequence Parallelism (USP: Ulysses All-to-All, Ring P2P LSE online reduction, CFG parallel, and `AllGather-KV × Ulysses` hybrid modes) topology invariants; and custom C++/AscendC/Triton/Catlass operator dispatch and A5 hardware guard axioms.
 - **DiT Block-Sparse Attention & Step Caching (`mindie-sd/dit-compute/sparse-and-cache`)**: RainFusion V2/V3 3D spatiotemporal window rearrangement and first-frame/text protection, AdaBSA adaptive CDF block sparsity, EagleQBSA (per-block INT8 Q/K + per-channel FP8 V) and Hadamard-rotated FP8 block-sparse attention, and `CacheAgent` (`DiTBlockCache` / `AttentionCache`) cross-step reuse calibration workflows.
@@ -92,7 +108,7 @@ This repository hosts the standalone **`mindie-sd` graded domain knowledge corpu
 
 ### 1. The `mindie-graded-unit/1` L1–L4 Hierarchy
 
-Instead of lossy chat summaries or unconditioned "best practices", every knowledge unit in this repository is structured into **four graded levels (L1–L4)** based on engineering abstraction and actionability (current breakdown: **L1: 3 · L2: 14 · L3: 7 · L4: 0**):
+Instead of lossy chat summaries or unconditioned "best practices", every knowledge unit in this repository is structured into **four graded levels (L1–L4)** based on engineering abstraction and actionability (current breakdown: **L1: 3 · L2: 15 · L3: 7 · L4: 0**):
 
 | Level | Canonical Category (`category`) | Role | Scope & Admission Requirements |
 | :---: | --- | --- | --- |
@@ -107,7 +123,7 @@ Instead of lossy chat summaries or unconditioned "best practices", every knowled
 flowchart LR
   Agent["🤖 AI Coding Agent (Claude Code / Codex / Kimi / DSH)"]
   Query["🔎 knowledge_query (Query text + observed conditions)"]
-  Manifest["📋 index/routing-manifest.json (24 units · condition predicates · inheritance)"]
+  Manifest["📋 index/routing-manifest.json (25 units · condition predicates · inheritance)"]
   Topology["🗂️ index/shard-topology.json (Subdomain shards · L1-L4 counts)"]
   Match{"⚖️ Condition Matcher (matched / mismatch / condition_unknown)"}
   Explain["📖 knowledge_explain (Read pinned unit @revision)"]
@@ -124,7 +140,7 @@ flowchart LR
 
 ## 📊 Subdomain Breakdown & Representative Units
 
-[`index/routing-manifest.json`](./index/routing-manifest.json) and [`index/shard-topology.json`](./index/shard-topology.json) are the authoritative derived inventories rebuilt from the Markdown units. This repository currently contains **24 graded knowledge units** (**L1: 3 · L2: 14 · L3: 7 · L4: 0**):
+[`index/routing-manifest.json`](./index/routing-manifest.json) and [`index/shard-topology.json`](./index/shard-topology.json) are the authoritative derived inventories rebuilt from the Markdown units. This repository currently contains **25 graded knowledge units** (**L1: 3 · L2: 15 · L3: 7 · L4: 0**):
 
 ### 1. Leaf Subdomain Statistics
 
@@ -136,11 +152,11 @@ flowchart LR
 | `mindie-sd/quantization/contracts` | **4** | `L2: 3, L3: 1` | Quantization device byte contract & alignment SOP, `W8A8_TIMESTEP` & `TimestepManager` dynamic sync SOP, `quantize()` descriptor parsing & in-place replacement SOP, and `W8A8/MXFP8/W4A4/MXFP4` accuracy-recovery workflow |
 | `mindie-sd/vae-and-offload/sliced-decode` | **4** | `L2: 3, L3: 1` | VAE/TAE state-carry sliced decode & offload SOP, 3D causal VAE (WanVAE/HunyuanVAE/TAEHV) cross-axis coupling audit & latent-boundary slicing SOP, dual-stream async `enable_offload` & `ShareMemoryManager` IPC SOP, and four-gate equivalence workflow |
 | `mindie-sd/models/recipes` | **3** | `L2: 2, L3: 1` | Wan2.1/Wan2.2 video DiT (sparse × USP × quant × 3D VAE) joint tuning workflow, FLUX.1 / Qwen-Image / SD3 MMDiT dual-stream image tuning SOP, and HunyuanVideo / HunyuanImage-3.0 (`DyEPLB`) / MiniMax-H3 tuning SOP |
-| `mindie-sd/operators/custom-ops` | **1** | `L2: 1` | MindIE-SD custom C++/AscendC/TIK/Triton/Catlass operators (RainFusion, EagleQBSA, LaPreprocess, `mm_swiglu_mxquant`) SOP |
+| `mindie-sd/operators/custom-ops` | **2** | `L2: 2` | MindIE-SD custom C++/AscendC/TIK/Triton/Catlass operators (RainFusion, EagleQBSA, LaPreprocess, `mm_swiglu_mxquant`) SOP |
 | `mindie-sd/operators/fusion-analysis` | **1** | `L3: 1` | `fusion-scope-analyze` structural boundary rules (Rules 1–6), `PipeUtilization` benefit ceiling, and post-hoc equal-work audit workflow |
 | `mindie-sd/workflows/s0-s6-auto-opt` | **1** | `L3: 1` | MindIE-SD S0–S6 end-to-end diffusion model auto-optimization state machine, compound verification, and `kb_lint` governance workflow |
 
-### 2. All 24 Graded Knowledge Units
+### 2. All 25 Graded Knowledge Units
 
 | Unit ID (Click to view Markdown) | Subdomain Path | Tier / Category | Summary | Pinned Reference (`ref`) |
 | --- | --- | :---: | --- | --- |
@@ -163,6 +179,7 @@ flowchart LR
 | [`unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop`](./mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop.md) | `mindie-sd/vae-and-offload/sliced-decode` | **L2** / `sop` | MindIE-SD DiT dual-stream asynchronous parameter offload (storage.resize_) and multi-instance ZMQ IPC shared-memory SOP | `mindie://mindie-sd/units/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop@1` |
 | [`unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow`](./mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow.md) | `mindie-sd/vae-and-offload/sliced-decode` | **L3** / `workflow` | MindIE-SD VAE/TAE state-carry sliced decode four-gate equivalence verification and collective deadlock prevention workflow | `mindie://mindie-sd/units/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow@1` |
 | [`unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop`](./mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md) | `mindie-sd/operators/custom-ops` | **L2** / `sop` | MindIE-SD custom C++/AscendC/TIK/Triton/Catlass operators (RainFusion, EagleQBSA, LaPreprocess, mm_swiglu_mxquant) SOP | `mindie://mindie-sd/units/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop@1` |
+| [`unit-mindie-sd-dense-attention-dispatch-sop`](./mindie-sd/operators/custom-ops/unit-mindie-sd-dense-attention-dispatch-sop.md) | `mindie-sd/operators/custom-ops` | **L2** / `sop` | MindIE-SD dense attention dispatch from vLLM-Omni and other Ascend callers | `mindie://mindie-sd/units/unit-mindie-sd-dense-attention-dispatch-sop@1` |
 | [`unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow`](./mindie-sd/operators/fusion-analysis/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow.md) | `mindie-sd/operators/fusion-analysis` | **L3** / `workflow` | MindIE-SD fusion-scope-analyze structural boundary rules, PipeUtilization benefit ceiling, and post-hoc equal-work audit workflow | `mindie://mindie-sd/units/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow@1` |
 | [`unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow`](./mindie-sd/workflows/s0-s6-auto-opt/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md) | `mindie-sd/workflows/s0-s6-auto-opt` | **L3** / `workflow` | MindIE-SD S0-S6 end-to-end diffusion model auto-optimization state machine, compound verification, and kb-lint governance workflow | `mindie://mindie-sd/units/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow@1` |
 | [`unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow`](./mindie-sd/models/recipes/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow.md) | `mindie-sd/models/recipes` | **L3** / `workflow` | MindIE-SD Wan2.1/Wan2.2 video generation DiT (sparse attention × USP × quantization × 3D VAE) joint optimization workflow | `mindie://mindie-sd/units/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow@1` |
@@ -210,7 +227,7 @@ Every push and pull request targeting `main` is enforced by `.github/workflows/c
 - **Knowledge Runtime & Redaction Engine**: [`mindie-agent/knowledge`](https://github.com/mindie-agent/knowledge) (`mindie-knowledge`)
 - **The 8 Public Domain Knowledge Corpora**:
   - [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) — `vLLM-Ascend` & `vLLM-Omni` model bring-up, ACLGraph, MoE, PD disaggregation & omni pipelines (91 Units)
-  - [`knowledge-mindie-sd`](https://github.com/mindie-agent/knowledge-mindie-sd) — `MindIE-SD` multimodal diffusion (DiT/MMDiT/3D-VAE) block-sparse attention, USP sequence parallelism, step caching & quantization (24 Units)
+  - [`knowledge-mindie-sd`](https://github.com/mindie-agent/knowledge-mindie-sd) — `MindIE-SD` multimodal diffusion (DiT/MMDiT/3D-VAE) block-sparse attention, USP sequence parallelism, step caching & quantization (25 Units)
   - [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) — AscendC / BiShengIR / Triton / TileLang operator development & optimization (103 Units)
   - [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) — Core inference engine scheduling, KV cache & serving architecture (105 Units)
   - [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) — HCCL collectives, RoCE/HCCS topology, Ulysses/Ring/CFG hybrid parallelism & SHMEM (39 Units)

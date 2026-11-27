@@ -12,7 +12,7 @@
   <a href="https://github.com/mindie-agent/mindie-agent"><img src="https://img.shields.io/badge/MindIE%20Agent-Ecosystem-7045f5.svg" alt="MindIE Agent"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/Schema-mindie--graded--unit%2F1-0f766e.svg" alt="Schema mindie-graded-unit/1"></a>
   <a href="./publication-contract.json"><img src="https://img.shields.io/badge/domain-mindie--sd-0284c7.svg" alt="Domain mindie-sd"></a>
-  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-24%20Units-d97757.svg" alt="24 Graded Units"></a>
+  <a href="./index/routing-manifest.json"><img src="https://img.shields.io/badge/Graded%20Units-25%20Units-d97757.svg" alt="25 Graded Units"></a>
   <a href="./index/shard-topology.json"><img src="https://img.shields.io/badge/Levels-L1%20to%20L4-10a37f.svg" alt="Levels L1-L4"></a>
 </p>
 
@@ -77,11 +77,27 @@
 
 </details>
 
+在 vLLM-Omni 的 Consult 阶段，按已确认的库源码修订和实际调用路径查找 MindIE-SD 算子知识。下面是条件填写示例。只有部署证据吻合时才使用这些值。包已安装或配置为 FLASH_ATTN 时，可用 include_unknown=True 探索仍缺哪些条件。整套调优和并行规程继续按其各自条件筛选。
+
+```python
+observed = {
+    "framework": "vllm-omni",
+    "repository": "Ascend/MindIE-SD",
+    "revision": "9fe772dfb90696e21b5e5d4e92ca07dffab84cf4",
+    "attention_implementation": "mindiesd.attention_forward",
+}
+knowledge_query(domain="mindie-sd", query="dense attention_forward dispatch", conditions=observed)
+knowledge_explain(
+    ref="mindie://mindie-sd/units/unit-mindie-sd-dense-attention-dispatch-sop@1",
+    conditions=observed,
+)
+```
+
 ---
 
 ## 🏗️ 领域全景与 L1–L4 分级架构
 
-本仓库承载 MindIE Agent 的 **`mindie-sd` 独立领域分级知识源**（共 **24 个分级知识单元**：`L1: 3`、`L2: 14`、`L3: 7`、`L4: 0`）。专门面向昇腾 800I A2 (910B)、800I A3 (910C) 与 Ascend 950 (A5) 上的多模态视频与图像生成扩散模型加速框架 `MindIE-SD`，系统沉淀了：
+本仓库承载 MindIE Agent 的 **`mindie-sd` 独立领域分级知识源**（共 **25 个分级知识单元**：`L1: 3`、`L2: 15`、`L3: 7`、`L4: 0`）。专门面向昇腾 800I A2 (910B)、800I A3 (910C) 与 Ascend 950 (A5) 上的多模态视频与图像生成扩散模型加速框架 `MindIE-SD`，系统沉淀了：
 
 - **架构公理（`mindie-sd/concepts/architecture`）**：DiT 稀疏注意力、跨步缓存与量化的正交加速公理；USP（Ulysses All-to-All、Ring P2P LSE 在线合并、CFG 并行与 `AllGather-KV × Ulysses` 复合形态）序列并行不变量；以及自定义 C++/AscendC/Triton/Catlass 算子编译分发与 A5 硬件守卫公理。
 - **DiT 稀疏与跨步缓存（`mindie-sd/dit-compute/sparse-and-cache`）**：RainFusion V2/V3 3D 时空窗重排与首帧/文本保护、AdaBSA 自适应 CDF 块稀疏、EagleQBSA（Q/K INT8 + V FP8）与 Hadamard 旋转 FP8 块稀疏，以及 `CacheAgent`（`DiTBlockCache` / `AttentionCache`）跨步复用标定工作流。
@@ -92,7 +108,7 @@
 
 ### 1. `mindie-graded-unit/1` 四级知识单元体系（L1–L4）
 
-本知识库拒绝碎片化的聊天摘要或脱离前提的“万能经验”，所有知识单元均按工程抽象粒度与可操作性划分为 **L1–L4 四个层级**（当前分布：**L1: 3 · L2: 14 · L3: 7 · L4: 0**）：
+本知识库拒绝碎片化的聊天摘要或脱离前提的“万能经验”，所有知识单元均按工程抽象粒度与可操作性划分为 **L1–L4 四个层级**（当前分布：**L1: 3 · L2: 15 · L3: 7 · L4: 0**）：
 
 | 层级 | 标准类别 (`category`) | 工程定位 | 核心内容与准入要求 |
 | :---: | --- | --- | --- |
@@ -107,7 +123,7 @@
 flowchart LR
   Agent["🤖 AI Coding Agent (Claude Code / Codex / Kimi / DSH)"]
   Query["🔎 knowledge_query (查询词 + 实测环境条件)"]
-  Manifest["📋 index/routing-manifest.json (24 个单元元数据 · 条件与继承闭包)"]
+  Manifest["📋 index/routing-manifest.json (25 个单元元数据 · 条件与继承闭包)"]
   Topology["🗂️ index/shard-topology.json (子领域分片拓扑 · L1-L4 统计)"]
   Match{"⚖️ 条件匹配引擎 (matched / mismatch / condition_unknown)"}
   Explain["📖 knowledge_explain (按精确修订号 @revision 精读)"]
@@ -124,7 +140,7 @@ flowchart LR
 
 ## 📊 子领域分布与代表性知识单元
 
-[`index/routing-manifest.json`](./index/routing-manifest.json) 与 [`index/shard-topology.json`](./index/shard-topology.json) 是由全量 Markdown 单元派生的权威实时清单。当前仓库共包含 **24 个分级知识单元**（**L1: 3 · L2: 14 · L3: 7 · L4: 0**）：
+[`index/routing-manifest.json`](./index/routing-manifest.json) 与 [`index/shard-topology.json`](./index/shard-topology.json) 是由全量 Markdown 单元派生的权威实时清单。当前仓库共包含 **25 个分级知识单元**（**L1: 3 · L2: 15 · L3: 7 · L4: 0**）：
 
 ### 1. 子领域分片（Leaf Shard）分布统计
 
@@ -136,11 +152,11 @@ flowchart LR
 | `mindie-sd/quantization/contracts` | **4** | `L2: 3, L3: 1` | 量化设备字节契约与对齐 SOP、`W8A8_TIMESTEP` 与 `TimestepManager` 动态同步 SOP、`quantize()` 描述符解析与原地替换 SOP、`W8A8/MXFP8/W4A4/MXFP4` 分级量化与精度回退工作流 |
 | `mindie-sd/vae-and-offload/sliced-decode` | **4** | `L2: 3, L3: 1` | VAE/TAE 状态携带切分与卸载总览 SOP、3D 因果 VAE (WanVAE/HunyuanVAE/TAEHV) 跨轴耦合审计与潜帧边界切分 SOP、双流异步 `enable_offload` 与 `ShareMemoryManager` IPC 共享内存 SOP、VAE 四道等价验证闸与防死锁工作流 |
 | `mindie-sd/models/recipes` | **3** | `L2: 2, L3: 1` | Wan2.1/Wan2.2 视频 DiT（稀疏×USP×量化×3D VAE）联合调优工作流、FLUX.1 / Qwen-Image / SD3 MMDiT 双流图像扩散调优 SOP、HunyuanVideo / HunyuanImage-3.0 (`DyEPLB`) / MiniMax-H3 调优 SOP |
-| `mindie-sd/operators/custom-ops` | **1** | `L2: 1` | MindIE-SD 自定义 C++/AscendC/TIK/Triton/Catlass 算子（RainFusion、EagleQBSA、LaPreprocess、`mm_swiglu_mxquant`）开发与调度 SOP |
+| `mindie-sd/operators/custom-ops` | **2** | `L2: 2` | MindIE-SD 自定义 C++/AscendC/TIK/Triton/Catlass 算子（RainFusion、EagleQBSA、LaPreprocess、`mm_swiglu_mxquant`）开发与调度 SOP |
 | `mindie-sd/operators/fusion-analysis` | **1** | `L3: 1` | `fusion-scope-analyze` 结构边界划分规则（Rules 1–6）、`PipeUtilization` 收益上限估算与等工作量后验审计工作流 |
 | `mindie-sd/workflows/s0-s6-auto-opt` | **1** | `L3: 1` | MindIE-SD S0–S6 端到端扩散模型自动调优状态机、组合消融验证与 `kb_lint` 知识入库门禁工作流 |
 
-### 2. 全量分级知识单元索引（All 24 Graded Units）
+### 2. 全量分级知识单元索引（All 25 Graded Units）
 
 | 知识单元 ID（点击查看原文） | 子领域路径 | 层级 / 类别 | 工程主题与摘要 | 固定修订引用 (`ref`) |
 | --- | --- | :---: | --- | --- |
@@ -163,6 +179,7 @@ flowchart LR
 | [`unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop`](./mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop.md) | `mindie-sd/vae-and-offload/sliced-decode` | **L2** / `sop` | MindIE-SD DiT 双流异步参数 Offload（storage.resize_）与单机多实例 IPC 共享内存规程 | `mindie://mindie-sd/units/unit-mindie-sd-layerwise-cpu-npu-hbm-async-offload-and-share-memory-sop@1` |
 | [`unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow`](./mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow.md) | `mindie-sd/vae-and-offload/sliced-decode` | **L3** / `workflow` | MindIE-SD VAE/TAE 状态携带切分四道等价验证闸与集体通信防死锁工作流 | `mindie://mindie-sd/units/unit-mindie-sd-vae-state-carry-feature-cache-and-equivalence-gate-workflow@1` |
 | [`unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop`](./mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md) | `mindie-sd/operators/custom-ops` | **L2** / `sop` | MindIE-SD 自定义 C++/AscendC/TIK/Triton/Catlass 算子（RainFusion、EagleQBSA、LaPreprocess、mm_swiglu_mxquant）规程 | `mindie://mindie-sd/units/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop@1` |
+| [`unit-mindie-sd-dense-attention-dispatch-sop`](./mindie-sd/operators/custom-ops/unit-mindie-sd-dense-attention-dispatch-sop.md) | `mindie-sd/operators/custom-ops` | **L2** / `sop` | vLLM-Omni 等调用方的 MindIE-SD 稠密注意力分发规程 | `mindie://mindie-sd/units/unit-mindie-sd-dense-attention-dispatch-sop@1` |
 | [`unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow`](./mindie-sd/operators/fusion-analysis/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow.md) | `mindie-sd/operators/fusion-analysis` | **L3** / `workflow` | MindIE-SD fusion-scope-analyze 结构边界划分规则、PipeUtilization 收益上限估算与等工作量后验审计工作流 | `mindie://mindie-sd/units/unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow@1` |
 | [`unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow`](./mindie-sd/workflows/s0-s6-auto-opt/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow.md) | `mindie-sd/workflows/s0-s6-auto-opt` | **L3** / `workflow` | MindIE-SD S0–S6 端到端扩散模型自动调优状态机、组合消融验证与 kb-lint 知识门禁工作流 | `mindie://mindie-sd/units/unit-mindie-sd-model-auto-optimization-s0-s6-and-kb-lint-workflow@1` |
 | [`unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow`](./mindie-sd/models/recipes/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow.md) | `mindie-sd/models/recipes` | **L3** / `workflow` | MindIE-SD Wan2.1/Wan2.2 视频生成模型（稀疏注意力 × USP × 量化 × 3D VAE）联合调优工作流 | `mindie://mindie-sd/units/unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow@1` |
@@ -210,7 +227,7 @@ knowledge-mindie-sd/
 - **知识检索与隐私脱敏运行时**：[`mindie-agent/knowledge`](https://github.com/mindie-agent/knowledge)（Python 包 `mindie-knowledge`）
 - **八大公开领域知识库矩阵**：
   - [`knowledge-vllm-ascend`](https://github.com/mindie-agent/knowledge-vllm-ascend) — `vLLM-Ascend` 与 `vLLM-Omni` 适配、图编译、MoE、PD 分离与多阶段全模态流水线（91 Units）
-  - [`knowledge-mindie-sd`](https://github.com/mindie-agent/knowledge-mindie-sd) — `MindIE-SD` 多模态扩散模型（DiT/MMDiT/3D-VAE）块稀疏注意力、USP 序列并行、跨步缓存与量化加速（24 Units）
+  - [`knowledge-mindie-sd`](https://github.com/mindie-agent/knowledge-mindie-sd) — `MindIE-SD` 多模态扩散模型（DiT/MMDiT/3D-VAE）块稀疏注意力、USP 序列并行、跨步缓存与量化加速（25 Units）
   - [`knowledge-operators`](https://github.com/mindie-agent/knowledge-operators) — AscendC / BiShengIR / Triton / TileLang 算子开发与优化（103 Units）
   - [`knowledge-infer-core`](https://github.com/mindie-agent/knowledge-infer-core) — 核心推理引擎调度、KV Cache 与服务化架构（105 Units）
   - [`knowledge-infer-distributed`](https://github.com/mindie-agent/knowledge-infer-distributed) — HCCL 集合通信、RoCE/HCCS 拓扑、Ulysses/Ring/CFG 混合并行与 SHMEM（39 Units）

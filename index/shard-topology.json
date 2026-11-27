@@ -20,6 +20,7 @@
       "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
       "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
     ],
+    "unit-mindie-sd-dense-attention-dispatch-sop": [],
     "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": [],
     "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": [
       "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
@@ -96,8 +97,8 @@
   "federation": {
     "corpus": {
       "automatic": false,
-      "bytes": 119089,
-      "estimated_tokens": 21331,
+      "bytes": 121958,
+      "estimated_tokens": 21743,
       "kind": "federation",
       "path": ".",
       "unit_ids": [
@@ -107,6 +108,7 @@
         "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
         "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
         "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+        "unit-mindie-sd-dense-attention-dispatch-sop",
         "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
         "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
         "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
@@ -126,13 +128,13 @@
         "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow",
         "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow"
       ],
-      "units": 24
+      "units": 25
     },
     "domains": [
       {
         "automatic": false,
-        "bytes": 119089,
-        "estimated_tokens": 21331,
+        "bytes": 121958,
+        "estimated_tokens": 21743,
         "exceeds": [],
         "kind": "federation",
         "path": "mindie-sd",
@@ -144,6 +146,7 @@
           "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop",
           "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms",
           "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+          "unit-mindie-sd-dense-attention-dispatch-sop",
           "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
           "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop",
           "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop",
@@ -163,11 +166,11 @@
           "unit-mindie-sd-w8a8-mxfp8-w4a4-mxfp4-calibration-and-accuracy-recovery-workflow",
           "unit-mindie-sd-wan21-wan22-video-dit-sparse-usp-and-quant-recipe-workflow"
         ],
-        "units": 24
+        "units": 25
       }
     ]
   },
-  "index_build_elapsed_ms": 8.436916046775877,
+  "index_build_elapsed_ms": 8.913333003874868,
   "leaves": [
     {
       "automatic": false,
@@ -217,16 +220,17 @@
     },
     {
       "automatic": false,
-      "bytes": 6740,
-      "estimated_tokens": 1294,
+      "bytes": 9609,
+      "estimated_tokens": 1706,
       "exceeds": [],
       "kind": "leaf",
       "path": "mindie-sd/operators/custom-ops",
       "recommended_action": "review_leaf_split",
       "unit_ids": [
-        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop"
+        "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+        "unit-mindie-sd-dense-attention-dispatch-sop"
       ],
-      "units": 1
+      "units": 2
     },
     {
       "automatic": false,
@@ -352,17 +356,18 @@
     },
     {
       "automatic": false,
-      "bytes": 12942,
-      "estimated_tokens": 2475,
+      "bytes": 15811,
+      "estimated_tokens": 2887,
       "exceeds": [],
       "kind": "subtree",
       "path": "mindie-sd/operators",
       "recommended_action": "review_two_level_subtree_split",
       "unit_ids": [
         "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop",
+        "unit-mindie-sd-dense-attention-dispatch-sop",
         "unit-mindie-sd-fusion-scope-analyze-and-pipe-benefit-workflow"
       ],
-      "units": 2
+      "units": 3
     },
     {
       "automatic": false,
@@ -425,7 +430,7 @@
       "units": 1
     }
   ],
-  "unit_count": 24,
+  "unit_count": 25,
   "units": {
     "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": {
       "bytes": 4473,
@@ -505,6 +510,17 @@
         "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
       ],
       "path": "mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md",
+      "tier": "L2"
+    },
+    "unit-mindie-sd-dense-attention-dispatch-sop": {
+      "bytes": 2869,
+      "category": "sop",
+      "content_sha256": "508b6cba10519cd0922a885c0e8d6ff6a2c74e29c20a50b2763d899c97f21709",
+      "domain_path": "mindie-sd/operators/custom-ops",
+      "estimated_tokens": 412,
+      "evidence_strength": "software_contract",
+      "inherits_from": [],
+      "path": "mindie-sd/operators/custom-ops/unit-mindie-sd-dense-attention-dispatch-sop.md",
       "tier": "L2"
     },
     "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": {

@@ -1,5 +1,5 @@
 {
-  "build_elapsed_ms": 8.436916046775877,
+  "build_elapsed_ms": 8.913333003874868,
   "closure": {
     "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": [
       "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
@@ -21,6 +21,7 @@
       "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms",
       "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms"
     ],
+    "unit-mindie-sd-dense-attention-dispatch-sop": [],
     "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": [],
     "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": [
       "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms"
@@ -94,7 +95,7 @@
       "unit-mindie-sd-rainfusion-rf-v2-rf-v3-layout-and-block-mask-sop"
     ]
   },
-  "generation": "c1575b0160c80926906c11eebb59faa9784750d4d4f87ca3a7efd79f721537b4",
+  "generation": "62ffb83c59b276f35f5053e15fbcacc7564adf26b97156e8fd62674e7e054a2a",
   "id_path": {
     "unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop": "mindie-sd/vae-and-offload/sliced-decode/unit-mindie-sd-3d-causal-vae-wanvae-hunyuan-taehv-temporal-tiling-sop.md",
     "unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-ada-bsa-and-eagleqbsa-dynamic-sparse-attention-sop.md",
@@ -102,6 +103,7 @@
     "unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop": "mindie-sd/parallel/usp-and-cfg/unit-mindie-sd-cfg-parallel-group-init-and-allgather-kv-hybrid-sop.md",
     "unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms": "mindie-sd/concepts/architecture/unit-mindie-sd-custom-csrc-ascendc-triton-catlass-operator-dispatch-axioms.md",
     "unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop": "mindie-sd/operators/custom-ops/unit-mindie-sd-custom-sparse-attention-catlass-ffn-and-triton-ops-sop.md",
+    "unit-mindie-sd-dense-attention-dispatch-sop": "mindie-sd/operators/custom-ops/unit-mindie-sd-dense-attention-dispatch-sop.md",
     "unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms": "mindie-sd/concepts/architecture/unit-mindie-sd-dit-acceleration-sparse-cache-and-quantization-axioms.md",
     "unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop": "mindie-sd/dit-compute/sparse-and-cache/unit-mindie-sd-dit-compute-sparse-cache-and-quant-selection-sop.md",
     "unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop": "mindie-sd/models/recipes/unit-mindie-sd-flux1-qwen-image-and-sd3-mmdit-optimization-recipe-sop.md",
@@ -124,7 +126,7 @@
   "query_budget_excludes_build": true,
   "schema_version": "mindie-routing-manifest/1",
   "token_estimator": "utf8_bytes_div_4_ceiling",
-  "unit_count": 24,
+  "unit_count": 25,
   "units": [
     {
       "category": "sop",
@@ -435,6 +437,50 @@
           "ascend_laser_attention",
           "NormRopeConcat",
           "quant_four_over_six_a5"
+        ]
+      }
+    },
+    {
+      "category": "sop",
+      "conditions": {
+        "attention_implementation": "mindiesd.attention_forward",
+        "repository": "Ascend/MindIE-SD",
+        "revision": "9fe772dfb90696e21b5e5d4e92ca07dffab84cf4"
+      },
+      "domain_path": "mindie-sd/operators/custom-ops",
+      "evidence_strength": "software_contract",
+      "id": "unit-mindie-sd-dense-attention-dispatch-sop",
+      "inherits_from": [],
+      "inherits_from_closure": [],
+      "path": "mindie-sd/operators/custom-ops/unit-mindie-sd-dense-attention-dispatch-sop.md",
+      "provenance": {
+        "evidence_refs": [
+          "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/attention_forward.py",
+          "vllm-project/vllm-omni@9dd5c74af1e32095129085055988517f1369f210:vllm_omni/diffusion/attention/backends/flash_attn.py"
+        ],
+        "source_digest": "fba14cac85c59cc212be646a358a012afc26045719576beca3fd041d5fec56f2",
+        "source_locator": "Ascend/MindIE-SD@9fe772dfb90696e21b5e5d4e92ca07dffab84cf4:mindiesd/layers/flash_attn/attention_forward.py",
+        "source_type": "source_code",
+        "supersedes": []
+      },
+      "revision": 1,
+      "tier": "L2",
+      "title": "MindIE-SD dense attention dispatch from vLLM-Omni and other Ascend callers",
+      "token_estimate": 412,
+      "triggers": {
+        "error_signatures": [
+          "FlashAttentionScore host call path unknown",
+          "Unsupported FA type"
+        ],
+        "keywords": [
+          "MindIE-SD",
+          "mindiesd.attention_forward",
+          "vLLM-Omni",
+          "MiniMax-H3",
+          "dense attention",
+          "FLASH_ATTN",
+          "opt_mode",
+          "FlashAttentionScore"
         ]
       }
     },
